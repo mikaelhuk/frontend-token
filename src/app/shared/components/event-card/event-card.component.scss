@@ -1,0 +1,82 @@
+.esquerda {
+    flex-direction: column;
+
+    .calendario {
+        background-image: url("../../../../assets/calendar.png");
+        background-size: cover;
+        align-items: center;
+        justify-content: center;
+        width: 108px;
+        height: 111px;
+    }
+
+    #dia {
+        margin-top: 40px;
+        font-family: 'Francois One';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 48px;
+        line-height: 68px;
+        text-align: center;
+        color: #6047B2;
+    }
+
+    #mes {
+        font-family: 'Francois One';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 48px;
+        line-height: 68px;
+        text-align: center;
+        color: #FFFFFF;
+    }
+
+}
+
+.direita {
+    justify-content: center;
+
+    .icon_button {
+        justify-content: space-between;
+    }
+
+    .icon_container {
+        align-items: center;
+    }
+
+    margin-left: 30px;
+    padding: 0px 24px;
+    flex-direction: column;
+    width: 346px;
+    height: 170px;
+
+    background: #FFFFFF;
+    box-shadow: 8px 0px 9px -2px rgba(0, 0, 0, 0.25);
+
+    p {
+        overflow: scroll;
+        height: 80px;
+        font-family: 'Francois One';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 23px;
+
+        color: #464646;
+    }
+
+    span {
+        font-family: 'Francois One';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 23px;
+        text-align: center;
+
+        color: #464646;
+    }
+}
+
+.component {
+    position: relative;
+}

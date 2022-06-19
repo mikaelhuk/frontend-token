@@ -1,0 +1,48 @@
+.container {
+    background-image: url("../../../assets/Back.png");
+    background-size: auto;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.meio {
+    background: #FFFFFF;
+    width: 45%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 8px 0px 9px -2px rgba(0, 0, 0, 0.25);
+
+    h1 {
+        color: #5150A4;
+        font-size: 50px;
+        font-family: 'Francois One';
+    }
+
+    input {
+        width: 350px;
+        margin: 8px 0;
+        background: #D9D9D9;
+        border: none;
+        padding: 20px;
+        color: rgb(37, 37, 37);
+    }
+
+    button {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 19px;
+        color: #fff;
+        width: 150px;
+        height: 57px;
+        background: linear-gradient(180deg, #8D21D9 0%, #AF17D6 100%);
+        border: none;
+        border-radius: 22px;
+        margin-top: 50px;
+        margin-bottom: 18px;
+    }
+
+}

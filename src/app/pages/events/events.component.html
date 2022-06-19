@@ -1,0 +1,27 @@
+<div class="container">
+
+    <div class="topo">
+        <div class="navbar">
+            <img id="logo" src="../../../assets/logo.png" width="200px" height="42px">
+            <div class="sair"> 
+                <i data-feather="log-out"></i>
+                <a id="sair" href="/">| Sair</a>
+            </div>
+
+
+        </div>
+        <div class="eventos">
+            <img id="barra_vertical" src="../../../assets/Rectangle 10.png">
+            <h1>EVENTOS</h1>
+            <button routerLink="/criar-eventos">+ Criar Evento</button>
+        </div>
+
+    </div>
+
+    <div class="baixo">
+        <app-event-card [dia]="5">
+
+        </app-event-card>
+    </div>
+
+</div>

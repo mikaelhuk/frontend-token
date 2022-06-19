@@ -1,0 +1,16 @@
+<div class="container">
+
+    <div class="meio">
+        <form [formGroup]="evento_form" (submit)="criar_evento()">
+            <h1>CRIAR EVENTOS</h1>
+            <input formControlName="descricao" type="text" placeholder="descrição">
+            <input formControlName="data_inicio" type="date" placeholder="início">
+            <input formControlName="data_fim" type="date" placeholder="fim">
+            <input formControlName="hora_inicio" type="time" placeholder="hora de início">
+            <input formControlName="hora_fim" type="time" placeholder="hora de fim">
+            <button type="submit">Pronto</button>
+        </form>
+
+    </div>
+
+</div>

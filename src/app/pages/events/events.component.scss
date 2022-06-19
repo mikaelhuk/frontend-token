@@ -1,0 +1,81 @@
+.container {
+    background-image: url("../../../assets/Rectangle\ 6.png");
+    height: 1611px;
+    flex-direction: column;
+
+}
+
+.topo {
+    flex-direction: column;
+    background-image: url("../../../assets/Rectangle 8.png");
+    height: 412px;
+
+    .navbar {
+        height: 70px;
+        width: auto;
+        padding: 0px 52px;
+        align-items: center;
+
+        justify-content: space-between;
+        background: rgba(81, 80, 164, 0.7);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+
+    .sair {
+        align-items: center;
+        color: #FFFFFF;
+        a{
+            margin-left: 7px;
+            font-family: 'Inter';
+            font-size: 25px;
+            color: #FFFFFF;
+            text-decoration: none;
+    
+        }
+        
+    }
+
+    .eventos {
+        align-items: center;
+        justify-content: space-around;
+    
+        h1 {
+            font-family: 'Francois One';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 128px;
+            line-height: 182px;
+            text-align: center;
+            color: #FFFFFF;
+    
+        }
+    
+        #barra_vertical {
+            width: 15px;
+            height: 237px;
+            background: #FFFFFF;
+        }
+    
+        button {
+
+    
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 29px;
+            text-align: center;
+    
+            color: #FFFFFF;
+            width: 267px;
+            height: 71px;
+            background: linear-gradient(180deg, #8D21D9 0%, #AF17D6 100%);
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            border-radius: 45.5px;
+            border: none;
+        }
+    
+    }
+
+
+}
