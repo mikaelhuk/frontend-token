@@ -6,9 +6,7 @@ import {HttpClient, HttpParams} from '@angular/common/http';
 })
 export class EventService {
 
-  constructor(private http: HttpClient) {
-
-   }
+  constructor(private http: HttpClient) { }
 
    create_event(user_id: number, descricao: string, inicio: string, termino: string){
     return this.http.post('http://localhost:3000/events', {user_id: user_id, descricao: descricao, inicio: inicio, termino: termino});

@@ -1,10 +1,12 @@
 <div class="container">
 
     <div class="meio">
+        <form [formGroup]="register_form" (submit)="criar_usuario()">
         <h1>REGISTRE-SE</h1>
-        <input type="text" placeholder="Usuário">
-        <input type="password" placeholder="Senha">
-        <button>Pronto</button>
+        <input formControlName="nome" type="text" placeholder="Usuário">
+        <input formControlName="senha" type="password" placeholder="Senha">
+        <button type="submit">Pronto</button>
+        </form>
     </div>
 
 </div>
