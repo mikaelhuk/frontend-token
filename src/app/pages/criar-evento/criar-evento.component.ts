@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, NumberValueAccessor } from '@angular/forms';
 import { EventService } from 'src/app/services/event.service';
+import { Router } from '@angular/router';
 
 @Component({
   templateUrl: './criar-evento.component.html',
@@ -9,7 +10,7 @@ import { EventService } from 'src/app/services/event.service';
 export class CriarEventoComponent implements OnInit {
   user_id = Number(localStorage.getItem('user_id'));
   evento_form: FormGroup;
-  constructor(private form_buider: FormBuilder, private event_service: EventService) {
+  constructor(private form_buider: FormBuilder, private event_service: EventService, private router:Router) {
     this.evento_form = this.form_buider.group({
       descricao: '',
       data_inicio: '',
@@ -28,6 +29,7 @@ export class CriarEventoComponent implements OnInit {
     const fim = `${data_fim}T${hora_fim}:00`;
     this.event_service.create_event(this.user_id, descricao, inicio, fim).subscribe();
     console.log(this.user_id);
+    this.router.navigate(['events']);
   }
 
 }

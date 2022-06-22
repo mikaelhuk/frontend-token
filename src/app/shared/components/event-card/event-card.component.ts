@@ -52,5 +52,6 @@ export class EventCardComponent implements OnInit {
   delete() {
     this.event_service.delete_event(this.evento.id).subscribe();
     console.log(this.evento.id);
+    location.reload();
   }
 }

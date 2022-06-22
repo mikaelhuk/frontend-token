@@ -38,6 +38,7 @@ export class UpdateEventComponent implements OnInit {
     const inicio = `${data_inicio}T${hora_inicio}:00`;
     const fim = `${data_fim}T${hora_fim}:00`;
     this.update_event_service.update_event(this.evento.id, descricao, inicio, fim).subscribe();
+    this.router.navigate(['events']);
   }
 
 }
