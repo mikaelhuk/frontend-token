@@ -1,16 +1,20 @@
 <div class="container">
+
     <div class="esquerda">
         <h1>BEM VINDO!</h1>
         <img id="calendario" src="../../../assets/calendario.png" width="321px" height="321px">
         <img src="../../../assets/logo.png" width="248px" height="53px">
     </div>
+    
+    <form [formGroup]="login_form" (submit)="fazer_login()">
+        <div class="direita">
+            <h1>LOGIN</h1>
+            <img src="../../../assets/account 1.png" width="156px" height="158px">
+            <input formControlName="nome" type="text" placeholder="Usuário">
+            <input formControlName="senha" type="password" placeholder="Senha">
+            <button>Login</button>
+            <span>Não possui login? <a href="/register">Crie sua conta aqui!</a></span>
+        </div>
+    </form>
 
-    <div class="direita">
-        <h1>LOGIN</h1>
-        <img src="../../../assets/account 1.png" width="156px" height="158px">
-        <input type="text" placeholder="Usuário">
-        <input type="password" placeholder="Senha">
-        <button>Login</button>
-        <span>Não possui login? <a href="/register">Crie sua conta aqui!</a></span>
-    </div>
 </div>

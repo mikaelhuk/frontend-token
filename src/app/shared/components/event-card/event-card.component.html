@@ -12,9 +12,9 @@
         </div>
         <p>{{descricao}}</p>
         <div class="icon_button">
-            <div class="icon_container">
+            <div (click)="redirect()" class="icon_container">
                 <i data-feather="edit"></i>
-                <span>Editar Evento</span>
+               <a ><span>Editar Evento</span></a> 
             </div>
             <div class="icon_container">
                 <span>Excluir</span>

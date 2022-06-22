@@ -4,12 +4,14 @@ import { LoginComponent } from './pages/login/login.component';
 import { RegisterComponent } from './pages/register/register.component';
 import { EventsComponent } from './pages/events/events.component';
 import { CriarEventoComponent } from './pages/criar-evento/criar-evento.component';
+import { UpdateEventComponent } from './pages/update-event/update-event.component';
 
 const routes: Routes = [
   {path:'', component:LoginComponent},
   {path:'register', component:RegisterComponent},
   {path:'events', component:EventsComponent},
-  {path:'criar-eventos', component:CriarEventoComponent}
+  {path:'criar-eventos', component:CriarEventoComponent},
+  {path:'update-event', component:UpdateEventComponent}
 ];
 
 @NgModule({

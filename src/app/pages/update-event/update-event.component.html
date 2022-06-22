@@ -1,7 +1,7 @@
 <div class="container">
-    <form [formGroup]="evento_form" (submit)="criar_evento()">
+    <form [formGroup]="update_evento_form" (submit)="update_evento()">
         <div class="meio">
-            <h1>CRIAR EVENTOS</h1>
+            <h1>EDITAR EVENTOS</h1>
             <input formControlName="descricao" type="text" placeholder="descrição">
             <input formControlName="data_inicio" type="date" placeholder="início">
             <input formControlName="data_fim" type="date" placeholder="fim">

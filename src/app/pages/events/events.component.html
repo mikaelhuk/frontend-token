@@ -3,7 +3,7 @@
     <div class="topo">
         <div class="navbar">
             <img id="logo" src="../../../assets/logo.png" width="200px" height="42px">
-            <div class="sair"> 
+            <div class="sair">
                 <i data-feather="log-out"></i>
                 <a id="sair" href="/">| Sair</a>
             </div>
@@ -19,9 +19,13 @@
     </div>
 
     <div class="baixo">
-        <app-event-card [dia]="5">
+        <div *ngFor="let event of eventos">
 
-        </app-event-card>
+            <app-event-card [evento]="event">
+
+            </app-event-card>
+        </div>
+
     </div>
 
 </div>
