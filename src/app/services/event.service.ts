@@ -17,7 +17,7 @@ export class EventService {
    }
 
    delete_event(id: number){
-    //return this.http.delete('http://localhost:3000/events', {id: id});
+    return this.http.delete(`http://localhost:3000/events/${id}`);
    }
 
    get_events(user_id: string | null){

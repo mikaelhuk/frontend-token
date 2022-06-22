@@ -16,9 +16,11 @@
                 <i data-feather="edit"></i>
                <a ><span>Editar Evento</span></a> 
             </div>
-            <div class="icon_container">
-                <span>Excluir</span>
-                <i data-feather="trash-2"></i>
+            <div (click)="delete()">
+                <div class="icon_container">
+                    <span>Excluir</span>
+                    <i data-feather="trash-2"></i>
+                </div>
             </div>
         </div>
     </div>
